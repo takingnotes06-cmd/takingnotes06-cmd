@@ -45,57 +45,48 @@
 		<div class="jumbotron">
 			<h1 class="megah1">Reach out!</h1>
 			<form action="https://api.web3forms.com/submit" method="POST" id="form">
+  				<input type="hidden" name="access_key" value="da87787e-01e3-46f3-b9fc-931c19150f09">
+ 				<input type="hidden" name="subject" value="NEW Team17 Form Submission">
+ 				<input type="hidden" name="from_name" value="Team17">
+  				<input type="hidden" name="redirect" value="https://web3forms.com/success">
+  				<input type="checkbox" name="botcheck" style="display:none;">
 
-				<!-- Your Access key here. Don't worry this can be public -->
-				<input type="hidden" name="access_key" value="da87787e-01e3-46f3-b9fc-931c19150f09">
+  				<div class="form-group">
+    				<label for="exampleInputEmail2">Name</label>
+    				<input type="text" class="form-control" id="exampleInputEmail2" name="name" placeholder="Enter your name" required>
+  				</div>
 
-				<!-- Optional: Can be type="hidden" or type="text" for subject -->
-				<input type="hidden" name="subject" value="NEW Team17 Form Submission">
-			
-				<!-- Optional: From Name you want to see in the email
-					  Default is "Notifications". you can overwrite here -->
-				<input type="hidden" name="from_name" value="Team17">
-			
-				<!-- Optional: Redirect URL after form submission -->
-				<input type="hidden" name="redirect" value="https://web3forms.com/success">
-			
-				<!-- Optional: Add botcheck for basic spam protection. captcha is recommened -->
-				<input type="checkbox" name="botcheck" id="" style="display: none;">
-				
-				<div class="form-group">
-		    		<label for="exampleInputEmail2">Name</label>
-		    		<input class="form-control" id="exampleInputEmail2" placeholder="Enter your name" required>
-	      		</div>
+  				<div class="form-group">
+    				<label for="exampleInputEmail1">Email address</label>
+    				<input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email" required>
+    				<small id="emailHelp1" class="form-text text-muted">
+      				Your email will not be stored, shared or used for any other purposes.
+    				</small>
+  				</div>
 
-		  		<div class="form-group">
-		    		<label for="exampleInputEmail1">Email address</label>
-		    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
-		    		<small id="emailHelp1" class="form-text text-muted">Your email will not be stored, shared or used for any other purposes.</small> </div>
-		  		
-				<div class="form-group">
-					<label for="inquiryType">Type of Inquiry</label>
-					<select 
-					  class="form-control" 
-					  id="inquiryType" 
-					  name="inquiry_type" 
-					  required>
-					  <option value="" disabled selected>Select an option</option>
-					  <option value="General Question">General Question</option>
-					  <option value="Sponsorship Inquiry">Sponsorship Inquiry</option>
-					  <option value="Other">Other</option>
-					</select>
-				  </div>
-		  		<div class="form-group">
-		    		<label for="exampleInputEmail3">Message</label>
-		    		<input class="form-control" id="exampleInputEmail3" placeholder="Enter your query here!">
-	      		</div>
-		  		<div class="form-check">
-		    		<input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-		    		<label class="form-check-label" for="exampleCheck1">I am not a robot 👀</label>
-	    		</div>
-		  		<br>
-				<button type="submit" class="btn btn-primary"><h1 class="tinyh1">&nbsp;&nbsp;Submit&nbsp;&nbsp;</h1></button>
-	    	</form>
+  				<div class="form-group">
+    				<label for="inquiryType">Type of Inquiry</label>
+    				<select class="form-control" id="inquiryType" name="inquiry_type" required>
+      				<option value="" disabled selected>Select an option</option>
+      				<option value="General Question">General Question</option>
+      				<option value="Sponsorship Inquiry">Sponsorship Inquiry</option>
+      				<option value="Other">Other</option>
+    				</select>
+  				</div>
+
+  				<div class="form-group">
+    				<label for="exampleInputEmail3">Message</label>
+    				<input type="text" class="form-control" id="exampleInputEmail3" name="message" placeholder="Enter your query here!" required>
+  				</div>
+
+  				<div class="form-check">
+    				<input type="checkbox" class="form-check-input" id="exampleCheck1" name="human_check" required>
+    				<label class="form-check-label" for="exampleCheck1">I am not a robot 👀</label>
+  				</div>
+  				<br>
+  				<button type="submit" class="btn btn-primary tinyh1">Submit</button>
+			</form>
+
 		</div>
 		<br>
 		<br>
@@ -152,3 +143,4 @@
 </body>
 
 </html>
+
