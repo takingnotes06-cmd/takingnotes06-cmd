@@ -45,47 +45,92 @@
 		<div class="jumbotron">
 			<h1 class="megah1">Reach out!</h1>
 			<form action="https://api.web3forms.com/submit" method="POST" id="form">
-  				<input type="hidden" name="access_key" value="da87787e-01e3-46f3-b9fc-931c19150f09">
- 				<input type="hidden" name="subject" value="NEW Team17 Form Submission">
- 				<input type="hidden" name="from_name" value="Team17">
-  				<input type="hidden" name="redirect" value="https://web3forms.com/success">
-  				<input type="checkbox" name="botcheck" style="display:none;">
 
-  				<div class="form-group">
-    				<label for="exampleInputEmail2">Name</label>
-    				<input type="text" class="form-control" id="exampleInputEmail2" name="name" placeholder="Enter your name" required>
-  				</div>
+    			<!-- Access key -->
+    			<input type="hidden" name="access_key" value="da87787e-01e3-46f3-b9fc-931c19150f09">
 
-  				<div class="form-group">
-    				<label for="exampleInputEmail1">Email address</label>
-    				<input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email" required>
-    				<small id="emailHelp1" class="form-text text-muted">
-      				Your email will not be stored, shared or used for any other purposes.
-    				</small>
-  				</div>
+    			<!-- Optional: Subject for email -->
+    			<input type="hidden" name="subject" value="NEW Team17 Form Submission">
 
-  				<div class="form-group">
-    				<label for="inquiryType">Type of Inquiry</label>
-    				<select class="form-control" id="inquiryType" name="inquiry_type" required>
-      				<option value="" disabled selected>Select an option</option>
-      				<option value="General Question">General Question</option>
-      				<option value="Sponsorship Inquiry">Sponsorship Inquiry</option>
-      				<option value="Other">Other</option>
-    				</select>
-  				</div>
+    			<!-- Optional: From Name -->
+    			<input type="hidden" name="from_name" value="Team17">
 
-  				<div class="form-group">
-    				<label for="exampleInputEmail3">Message</label>
-    				<input type="text" class="form-control" id="exampleInputEmail3" name="message" placeholder="Enter your query here!" required>
-  				</div>
+    			<!-- Optional: Redirect URL after submission -->
+    			<input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-  				<div class="form-check">
-    				<input type="checkbox" class="form-check-input" id="exampleCheck1" name="human_check" required>
-    				<label class="form-check-label" for="exampleCheck1">I am not a robot 👀</label>
-  				</div>
-  				<br>
-  				<button type="submit" class="btn btn-primary tinyh1">Submit</button>
+    			<!-- Botcheck (hidden) -->
+    			<input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+
+    			<!-- Name -->
+    			<div class="form-group">
+        			<label for="name">Name</label>
+        			<input 
+            			type="text" 
+            			class="form-control" 
+            			id="name" 
+            			name="name" 
+            			placeholder="Enter your name" 
+            			required>
+    			</div>
+
+    			<!-- Email -->
+    			<div class="form-group">
+        			<label for="email">Email address</label>
+        			<input 
+            			type="email" 
+            			class="form-control" 
+            			id="email" 
+            			name="email" 
+            			placeholder="Enter your email" 
+            			required>
+        			<small class="form-text text-muted">
+            			Your email will not be stored, shared, or used for any other purposes.
+        			</small>
+    			</div>
+
+    			<!-- Inquiry Type -->
+    			<div class="form-group">
+        			<label for="inquiryType">Type of Inquiry</label>
+        			<select 
+            			class="form-control" 
+            			id="inquiryType" 
+            			name="inquiry_type" 
+            			required>
+            			<option value="" disabled selected>Select an option</option>
+            			<option value="General Question">General Question</option>
+            			<option value="Sponsorship Inquiry">Sponsorship Inquiry</option>
+            			<option value="Other">Other</option>
+        			</select>
+    			</div>
+
+    			<!-- Message -->
+    			<div class="form-group">
+        			<label for="message">Message</label>
+        			<textarea 
+            			class="form-control" 
+            			id="message" 
+            			name="message" 
+            			placeholder="Enter your query here!" 
+            			rows="5" 
+            			required></textarea>
+    			</div>
+
+    			<!-- Not a robot -->
+    			<div class="form-check mb-3">
+        			<input 
+            			type="checkbox" 
+            			class="form-check-input" 
+            			id="notRobot" 
+            			required>
+        			<label class="form-check-label" for="notRobot">I am not a robot 👀</label>
+    			</div>
+
+    			<!-- Submit button -->
+    			<button type="submit" class="btn btn-primary btn-block">
+        			<span class="tinyh1">Submit</span>
+    			</button>
 			</form>
+
 
 		</div>
 		<br>
@@ -143,4 +188,5 @@
 </body>
 
 </html>
+
 
