@@ -290,20 +290,16 @@ button.darkbackground:focus {
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-  background-image: url("../images/bg-min.jpg"); /* update path if needed */
-  background-size: cover;        /* fills the entire viewport */
-  background-position: center;   /* centers the image */
-  background-repeat: no-repeat;  /* prevents tiling */
-  background-attachment: fixed;  /* keeps the image fixed during scroll */
-  background-color: #f0f0f0;        /* fallback color while loading */
-                 /* ensures it stays behind everything */
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f0f0f0;
 }
+
 
 .darkbackground {
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -311,10 +307,25 @@ body {
 }
 
 .jumbotron {
-  background-color: rgba(255, 255, 255, 0.85); /* readable but shows bg through */
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
-  margin-top: 30%;
+  margin-top: 100px; /* desktop default */
 }
+
+/* tablet screens and smaller */
+@media (max-width: 992px) {
+  .jumbotron {
+    margin-top: 120px;
+  }
+}
+
+/* phones */
+@media (max-width: 576px) {
+  .jumbotron {
+    margin-top: 140px;
+  }
+}
+
 
 .jumbotron1 {
   padding: 2rem 1rem;
@@ -339,3 +350,6 @@ canvas {
 .sponsor-logo:hover {
   transform: scale(1.05);
 }
+
+
+
